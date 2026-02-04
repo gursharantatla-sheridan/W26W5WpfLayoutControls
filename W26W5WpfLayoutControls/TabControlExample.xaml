@@ -1,0 +1,28 @@
+﻿<Window x:Class="W26W5WpfLayoutControls.TabControlExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:W26W5WpfLayoutControls"
+        mc:Ignorable="d"
+        Title="TabControlExample" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Personal Info">
+                <Canvas>
+                    <Label Content="Label" Canvas.Left="74" Canvas.Top="69"/>
+                    <TextBox Canvas.Left="165" TextWrapping="Wrap" Text="TextBox" Canvas.Top="69" Width="120"/>
+                    <Button Content="Button" Canvas.Left="371" Canvas.Top="95"/>
+                </Canvas>
+            </TabItem>
+
+            <TabItem Header="Hobbies">
+                <StackPanel>
+                    <CheckBox Content="Singing"/>
+                    <CheckBox Content="Travelling"/>
+                    <CheckBox Content="Bike Riding"/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
