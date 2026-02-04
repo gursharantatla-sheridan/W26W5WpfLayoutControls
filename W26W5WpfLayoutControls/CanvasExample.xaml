@@ -8,8 +8,9 @@
         Title="CanvasExample" Height="450" Width="800">
     <Canvas>
         <Label Content="Label" Canvas.Left="71" Canvas.Top="91"/>
-        <TextBox Canvas.Left="114" TextWrapping="Wrap" Text="TextBox" Canvas.Top="95" Width="120"/>
-        <Button Content="Button" Canvas.Left="252" Canvas.Top="95"/>
+        <TextBox x:Name="txtFirstName" Canvas.Left="114" TextWrapping="Wrap" Canvas.Top="95" Width="120"/>
+        <Button x:Name="btnShow" Content="Show" Canvas.Left="252" Canvas.Top="95" HorizontalAlignment="Left" VerticalAlignment="Center" Width="78" Click="btnShow_Click"/>
+        <Button x:Name="btnShowGridExample" Content="Show Grid Example" Canvas.Left="114" Canvas.Top="188" Height="83" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnShowGridExample_Click"/>
 
     </Canvas>
 </Window>

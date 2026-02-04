@@ -21,5 +21,22 @@ namespace W26W5WpfLayoutControls
         {
             InitializeComponent();
         }
+
+        private void btnShowGridExample_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow win2 = new MainWindow();
+            win2.Owner = this;
+            win2.Show();
+        }
+
+        private void btnShow_Click(object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show("Hello " + txtFirstName.Text, "Message", MessageBoxButton.YesNo, MessageBoxImage.Information);
+
+            if (result == MessageBoxResult.Yes)
+                MessageBox.Show("YES clicked");
+            else
+                MessageBox.Show("NO clicked");
+        }
     }
 }
